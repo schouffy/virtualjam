@@ -19,7 +19,7 @@ public class OculusController : MonoBehaviour {
             var force = new Vector3(pos.x * PlayerMoveMultiplier, 0, 0);
             //Debug.Log("Player moves to " + force);
             //Debug.DrawRay(transform.position, force, Color.red, 5f);
-            this.GetComponent<Rigidbody>().AddRelativeForce(force, ForceMode.Acceleration);
+            this.GetComponent<Rigidbody>().AddRelativeForce(force, ForceMode.Impulse);
         }
     }
 }

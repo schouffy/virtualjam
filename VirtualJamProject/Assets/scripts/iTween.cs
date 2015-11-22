@@ -189,7 +189,7 @@ public class iTween : MonoBehaviour{
 		public static float lookSpeed = 3f;
 		public static bool isLocal = false;
 		public static Space space = Space.Self;
-		public static bool orientToPath = false;
+		public static bool orientToPath = true;
 		public static Color color = Color.white;
 		//update defaults:
 		public static float updateTimePercentage = .05f;

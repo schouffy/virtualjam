@@ -6,14 +6,10 @@ public class SticksOnGround : MonoBehaviour {
     Vector3 _target;
     public float SmoothSpeed;
     public LayerMask Track;
-    
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
+
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         RaycastHit hit;
         Debug.DrawRay(transform.position, -transform.up, Color.red, 15f);
 	    if (Physics.Raycast(transform.position, -transform.up, out hit, 15f, Track.value))
@@ -25,5 +21,5 @@ public class SticksOnGround : MonoBehaviour {
         {
             transform.up = Vector3.Lerp(transform.up, _target, Time.deltaTime * SmoothSpeed);
         }
-	}
+    }
 }

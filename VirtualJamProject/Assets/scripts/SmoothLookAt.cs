@@ -14,9 +14,9 @@ public class SmoothLookAt : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-       // transform.LookAt(Vector3.Lerp(transform.forward, ObjectToLook.position, Time.deltaTime * SmoothSpeed));
+        //transform.LookAt(Vector3.Lerp(transform.forward, ObjectToLook.position, Time.deltaTime * SmoothSpeed));
         transform.LookAt(ObjectToLook.position, transform.up);
     }
 
